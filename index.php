@@ -29,12 +29,12 @@
                 while ($row = $result->fetch_assoc()):
                     ?>
                     <tr>
-                        <td><?= $row['ra'] ?></td>
+                        <td><?= $row['id'] ?></td>
                         <td><?= $row['nome'] ?></td>
                         <td><?= $row['curso'] ?></td>
                         <td>
-                            <a href="update.php?id=<?= $row['ra'] ?>" class="btn btn-warning btn-sm">Editar</a>
-                            <a href="delete.php?id=<?= $row['ra'] ?>" class="btn btn-danger btn-sm"
+                            <a href="update.php?id=<?= $row['id'] ?>" class="btn btn-warning btn-sm">Editar</a>
+                            <a href="delete.php?id=<?= $row['id'] ?>" class="btn btn-danger btn-sm"
                                 onclick="return confirm('Tem certeza?')">Excluir</a>
                         </td>
                     </tr>
